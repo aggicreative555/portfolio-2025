@@ -1,3 +1,4 @@
+import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
@@ -20,7 +21,7 @@ export default function CosmJs() {
         <div>
           <button className=" flex gap-2 flex-row uppercase items-baseline text-sm font-medium text-black hover:text-red-800 group/goback">
                 <span className=" flex shrink-0 transition-transform group-hover/goback:-translate-y-1 group-hover/goback:-translate-x-1 ml-1 mb-20">
-                  Arrow
+                  <ArrowLeft/>
                 </span>
                 <span>
                   Go Back
@@ -39,7 +40,7 @@ export default function CosmJs() {
               <span className="pl-1 inline-block">
                 Vanilla JS Interactivity
                 <span className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px">
-                  Arrow
+                  <ArrowUpRight/>
                 </span>
               </span>
             </Link>
@@ -59,7 +60,7 @@ export default function CosmJs() {
               >
                 GitHub
                 <span className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/github:-translate-y-1 group-hover/github:translate-x-1 ml-1">
-                  Arrow
+                  <ArrowUpRight/>
                 </span>
               </Link>
             </li>
@@ -72,7 +73,7 @@ export default function CosmJs() {
               >
                 GitHub Projects
                 <span className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/githubp:-translate-y-1 group-hover/githubp:translate-x-1 ml-1">
-                  Arrow
+                  <ArrowUpRight/>
                 </span>
               </Link>
             </li>

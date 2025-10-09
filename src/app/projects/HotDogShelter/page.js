@@ -1,3 +1,7 @@
+import AnimatedLinks from "@/components/AnimatedLinks";
+import AnimatedTags from "@/components/AnimatedTags";
+import FadeInText from "@/components/FadeInText";
+import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
@@ -11,6 +15,13 @@ export const metadata = {
   },
 };
 
+const linkData = [
+  { title: 'Github', href: '/'},
+  { title: 'Github Project', href: '/'},
+]
+
+const tags = [ 'Javascript', 'Tailwind', 'React' ]
+
 export default function HotDogShelter() {
   return (
     <main className="flex flex-col items-center justify-center px-6 py-12 lg:flex-row lg:justify-between lg:px-20 lg:py-24">
@@ -18,73 +29,43 @@ export default function HotDogShelter() {
       {/* Content */}
       <div className="max-w-xl flex-1">
         <div>
-          <button className=" flex gap-2 flex-row uppercase items-baseline text-sm font-medium text-black hover:text-red-800 group/goback">
-                <span className=" flex shrink-0 transition-transform group-hover/goback:-translate-y-1 group-hover/goback:-translate-x-1 ml-1 mb-20">
-                  Arrow
+          <button className="flex gap-2 flex-row uppercase text-sm font-medium hover:text-red-800 group font-garamond cursor-pointer ">
+                <span className=" flex shrink-0 transition-transform group-hover:-translate-x-1 ml-1 mb-20">
+                  <ArrowLeft/>
                 </span>
-                <span>
+                <span className="group-hover:-translate-x-1 duration-300">
                   Go Back
                 </span>
           </button>
         </div>
-        <div className="relative cursor-pointer">
-          <h3>
-            <Link 
-              href="/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className=" uppercase inline-flex items-baseline font-medium leading-tight text-black hover:text-red-800 focus-visible:text-red-800 group/link text-xl sm:text-2xl lg:text-3xl"
-            >
-              Hot Dog Shelter | 
-              <span className="pl-1 inline-block">
-                API
-                <span className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px">
-                  Arrow
-                </span>
-              </span>
-            </Link>
-          </h3>
-          <p className="mt-4 text-sm leading-loose">
-            Enter my pet adoption website, where I use the Noroff API and CRUD operations in Vanilla JS to fetch, display and transform data.
-          </p>
-
-          {/* Additional links */}
-          <ul className="mt-4 flex flex-col space-y-2 sm:space-x-4 sm:space-y-0">
-            <li>
+        <div className="relative cursor-pointer font-garamond">
+          <FadeInText as='h3' delay={0.2} >
               <Link 
                 href="/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex uppercase items-baseline text-sm font-medium text-black hover:text-red-800 group/github"
+                title="Deployed website on Netlify"
+                aria-label="Deployed webiste on Netlify (opens in a new tab)"
+                className="text-crimson uppercase inline-flex items-baseline font-semibold tracking-wider leading-tight hover:text-red-800 hover:-translate-y-1 duration-300 focus-visible:text-red-800 group/link text-xl sm:text-2xl lg:text-3xl md:mb-4"
               >
-                GitHub
-                <span className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/github:-translate-y-1 group-hover/github:translate-x-1 ml-1">
-                  Arrow
+                Hot Dog Shelter | 
+                <span className="pl-1 inline-block">
+                  API
+                  <span className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-2 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 -translate-y-1 ">
+                    <ArrowUpRight/>
+                  </span>
                 </span>
               </Link>
-            </li>
-            <li>
-              <Link
-                href="/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex uppercase items-baseline text-sm font-medium text-black hover:text-red-800 group/githubp"
-              >
-                GitHub Projects
-                <span className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/githubp:-translate-y-1 group-hover/githubp:translate-x-1 ml-1">
-                  Arrow
-                </span>
-              </Link>
-            </li>
-          </ul>
+          </FadeInText>
+          <FadeInText as='p' delay={0.4} className='mt-4 text-sm leading-loose tracking-wider '>
+            Enter my pet adoption website, where I use the Noroff API and CRUD operations in Vanilla JS to fetch, display and transform data.
+          </FadeInText>
+          <AnimatedLinks links={linkData}/>
+         
         </div>
 
         {/* Technologies */}
-        <ul className="mt-6 flex flex-wrap gap-2">
-          <li className="flex items-center rounded-full bg-amber-950/10 px-3 py-1 text-xs font-medium leading-5 text-amber-950/80 uppercase">JavaScript</li>
-          <li className="flex items-center rounded-full bg-amber-950/10 px-3 py-1 text-xs font-medium leading-5 text-amber-950/80 uppercase">Figma</li>
-          <li className="flex items-center rounded-full bg-amber-950/10 px-3 py-1 text-xs font-medium leading-5 text-amber-950/80 uppercase">Tailwind CSS</li>
-        </ul>
+       <AnimatedTags tags={tags}/>
       </div>
 
       {/* Image placeholder */}

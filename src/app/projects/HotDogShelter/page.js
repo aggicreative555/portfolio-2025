@@ -2,6 +2,7 @@ import AnimatedImage from "@/components/AnimatedImage";
 import AnimatedLinks from "@/components/AnimatedLinks";
 import AnimatedTags from "@/components/AnimatedTags";
 import BackButton from "@/components/buttons/BackButton";
+import CopyLinkButton from "@/components/buttons/CopyButton";
 import FadeInText from "@/components/FadeInText";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
@@ -52,12 +53,12 @@ export default function HotDogShelter() {
                       </span>
                     </Link>
                 </FadeInText>
-                <FadeInText as='p' delay={.4}>
+                <FadeInText as='p' delay={0.4}>
                   <CopyLinkButton link="http://localhost:3000/projects/HotDogShelter" />
                 </FadeInText>
                 <FadeInText as='p' delay={0.4}>
                   <span className="cursor-default">
-                    Enter Hot Dog Shelter, <span aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300">a rustic vintage</span> styled website to find your pet match. This website let's you <span aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300">login, register with validation, view pets, and create or edit a pet post</span> yourself. This semester project uses Tailwind CSS, Vanilla Javascript and API CRUD operations.
+                    Enter Hot Dog Shelter, <span aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300">a rustic vintage</span> styled website to find your pet match. On this website you can <span aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300">login, register with validation, view pets, and create or edit a pet post</span> yourself. This semester project uses Tailwind CSS, Vanilla Javascript and API CRUD operations.
                   </span>
                   
                 </FadeInText>

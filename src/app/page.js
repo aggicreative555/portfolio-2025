@@ -6,6 +6,7 @@ import FadeInText from "@/components/FadeInText";
 import SvgSection from "@/components/SvgSection";
 
 export const metadata = {
+  metadataBase: new URL("https://aggi-cieplak.com"),
   title: "Aggi Cieplak | Front-end Portfolio",
   description: "Hi, I'm a junior front-end developer who builds creative, practical and structured experiences for the web. I'm seeking new job opportunities within my field!",
   openGraph: {
@@ -21,7 +22,7 @@ export default function Home() {
     <>
       <div className="mx-4 md:mx-0">
         <div className="container mx-auto">
-          <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-8">
+          <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-16 lg:py-8">
             <div className="lg:flex lg:justify-between lg:gap-4">
               <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24">
                 <div className="flex flex-col gap-4 font-garamond cursor-default">

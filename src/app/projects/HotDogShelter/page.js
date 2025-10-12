@@ -54,7 +54,7 @@ export default function HotDogShelter() {
                     </Link>
                 </FadeInText>
                 <FadeInText as='p' delay={0.4}>
-                  <CopyLinkButton link="http://localhost:3000/projects/HotDogShelter" />
+                  <CopyLinkButton link="https://aggi-cieplak-h0s4aj1l0-aggicreative555s-projects.vercel.app/projects/HotDogShelter" />
                 </FadeInText>
                 <FadeInText as='p' delay={0.4}>
                   <span className="cursor-default">

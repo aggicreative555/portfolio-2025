@@ -53,7 +53,7 @@ export default function RatCentral() {
                     </Link>
                 </FadeInText>
                 <FadeInText as='p' delay={.4}>
-                  <CopyLinkButton link="http://localhost:3000/projects/RatCentral" />
+                  <CopyLinkButton link="https://aggi-cieplak-h0s4aj1l0-aggicreative555s-projects.vercel.app/projects/RatCentral" />
                 </FadeInText>
                 <FadeInText as='p' delay={0.4} className='mt-4 text-sm leading-loose tracking-wider '>
                   Enter RatCentral, a social media where you can <span aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300">create a post, edit your post, and view likes and comments</span>. It also features a pure vanilla JS searchbar with a filter option. As this is part of my CSS frameworks learning, it uses <span aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300">Tailwind CSS</span>,<span aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300">Vanilla Javascript</span> and <span aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300">CRUD operations</span>.

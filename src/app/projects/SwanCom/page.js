@@ -56,7 +56,7 @@ export default function SwanCom() {
                       </Link>
                   </FadeInText>
                   <FadeInText as='p' delay={.4}>
-                    <CopyLinkButton link="http://localhost:3000/projects/SwanCom" />
+                    <CopyLinkButton link="https://aggi-cieplak-h0s4aj1l0-aggicreative555s-projects.vercel.app/projects/SwanCom" />
                   </FadeInText>
                   <FadeInText as='p' delay={0.4} className='mt-4 text-sm leading-loose tracking-wider '>
                     Enter SwanCom, a clean and elegant e-commerce website. This website was built as my first <span aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300">JS Frameworks</span> assignment. The store allows users to browse products, view product details, add products to their cart, and complete a checkout process. Users can also contact the store via a contact form with validation. It features <span aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300">Zustand Store</span>&<span aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300">Cart Interactions</span>,<span aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300">API fetch</span> using <span aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300">React</span> and styling in <span aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300">Tailwind CSS</span>.

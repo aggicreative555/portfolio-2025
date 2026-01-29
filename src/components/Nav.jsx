@@ -29,7 +29,7 @@ const Nav = () => {
     return (
         <nav className="hidden lg:block">
             <motion.ul
-            className="mt-16 w-max"
+            className="w-max"
             variants={container}
             initial='hidden'
             whileInView='show'
@@ -38,21 +38,21 @@ const Nav = () => {
                 variants={item}>
                     <Link href='#about' className="group flex items-center py-3 active">
                         <span className="mr-4 h-px w-8 bg-[#3B2D21] transition-all group-hover:w-16 group-hover:bg-red-800 group-focus-visible:w-16 group-focus-visible:bg-red-800 motion-reduce:transition-none"></span>
-                        <span className="text-xs font-bold uppercase tracking-widest group-hover:text-red-800 group-focus-visible:text-red-800 font-garamond ">About</span>
+                        <span className="text-sm font-bold uppercase tracking-widest group-hover:text-red-800 group-focus-visible:text-red-800 font-garamond ">About</span>
                     </Link>
                 </motion.li>
                 <motion.li
                     variants={item}>
                     <Link href='#experience' className="group flex items-center py-3 active">
                         <span className="mr-4 h-px w-8 bg-[#3B2D21] transition-all group-hover:w-16 group-hover:bg-red-800 group-focus-visible:w-16 group-focus-visible:bg-red-800 motion-reduce:transition-none"></span>
-                        <span className="text-xs font-bold uppercase tracking-widest group-hover:text-red-800 group-focus-visible:text-red-800 font-garamond ">Experience</span>
+                        <span className="text-sm font-bold uppercase tracking-widest group-hover:text-red-800 group-focus-visible:text-red-800 font-garamond ">Experience</span>
                     </Link>
                 </motion.li>
                 <motion.li
                     variants={item}>
                     <Link href='#projects' className="group flex items-center py-3 active">
                         <span className="mr-4 h-px w-8 bg-[#3B2D21] transition-all group-hover:w-16 group-hover:bg-red-800 group-focus-visible:w-16 group-focus-visible:bg-red-800 motion-reduce:transition-none"></span>
-                        <span className="text-xs font-bold uppercase tracking-widest group-hover:text-red-800 group-focus-visible:text-red-800 font-garamond ">Projects</span>
+                        <span className="text-sm font-bold uppercase tracking-widest group-hover:text-red-800 group-focus-visible:text-red-800 font-garamond ">Projects</span>
                     </Link>
                 </motion.li>
             </motion.ul>

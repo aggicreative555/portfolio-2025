@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="color-scheme" content="light"></meta>
+        <meta name="color-scheme" content="light dark"></meta>
         <link
           rel="apple-touch-icon"
           sizes="180x180"

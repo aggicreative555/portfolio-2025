@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link"
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Tags } from "lucide-react";
 import Image from "next/image";
 import AnimatedTags from "./AnimatedTags";
 import { useState } from "react";
@@ -30,10 +30,54 @@ function ProjectsSection() {
         } },
     }
 
-    const hotDogShelterTags = [ 'Javascript', 'TailwindCSS', 'API', 'CRUD', 'Accessibility', 'HTML&CSS']
-    const cosmTags = [ 'HTML', 'CSS', 'Accessibility', 'UI/UX']
-    const swanComTags = [ 'React', 'E-commerce', 'API', 'Zustand', 'HTML&CSS', 'Accessibility','Responsive']
+    const vinterestTags = [ 'Javascript', 'HTML&CSS', 'WCAG', 'Blog', 'UI/UX', 'Responsive','MPA']
+    const holidazeTags = ['React', 'Zustand', 'TailwindCSS', 'Vite', 'API', 'CRUD', 'WCAG', 'Postman', 'Git', 'SPA']
+    const swanComTags = [ 'React','Zustand', 'Vite', 'E-commerce', 'API', 'SPA', 'HTML&CSS', 'WCAG','Responsive']
+    const emailTags = [ 'MJML','HTML', 'CSS', 'Nodemailer', 'Client', 'WCAG','Responsive']
     const [hoveredIndex, setHoveredIndex] = useState(null);
+    
+    const projects = [
+        {
+            href: '/Projects/holidaze/',
+            ariaLabel: 'My Holidaze project (opens in the same window)',
+            title: 'Holidaze | Holiday Booking',
+            desc: 'Need a vacation that feels like a vintage postcard? Enter the Holidaze booking website, where you can sell and order your destination.',
+            src:'/projects/holidaze-thumbnail-dark.jpg',
+            blur:'/projects/holidaze-thumbnail-dark-blur.jpg',
+            alt:'Holidaze landing page screenshot',
+            projectTags: holidazeTags,
+        },
+        {
+            href: '/Projects/swancom/',
+            ariaLabel: 'My SwanCom project (opens in the same window)',
+            title: 'SwanCom | E-commerce',
+            desc: 'Enter the SwanCom e-commerce, where you go through the add to cart flow on a pixel perfect and clean setup. ',
+            src:'/projects/swancom-thumbnail-1.jpg',
+            blur:'/projects/swancom-thumbnail-blur.jpg',
+            alt:'SwanCom landing page screenshot',
+            projectTags: swanComTags,
+        },
+        {
+            href: '/Projects/vinterest/',
+            ariaLabel: 'My Vinterst project (opens in the same window)',
+            title: 'Vinterest | Vintage blog',
+            desc: 'Ever wondered what is behind vintage design, fashion and beauty? Take a look at Vinterest and write your own post on. ',
+            src:'/projects/vinterest-thumbnail-1.jpg',
+            blur:'/projects/vinterest-thumbnail-blur.jpg',
+            alt:'Vinterest landing page screenshot',
+            projectTags: vinterestTags,
+        },
+        {
+            href: '/Projects/email/',
+            ariaLabel: 'My email template project (opens in the same window)',
+            title: 'Red Velvet | Marketing email',
+            desc: 'A marketing email template for a content creator called Red Velvet',
+            src:'/projects/redvelvet-thumbnail.jpg',
+            blur:'/projects/redvelvet-thumbnail-blur.jpg',
+            alt:'Vinterest landing page screenshot',
+            projectTags: emailTags,
+        },
+    ]
   
   return (
     <motion.ul 
@@ -42,124 +86,51 @@ function ProjectsSection() {
     initial='hidden'
     whileInView='show'
     viewport={{once: true, amount:0.2}}>
-        <motion.li className="mb-12"
-        onHoverStart={() => setHoveredIndex(1)}
-        onHoverEnd={() => setHoveredIndex(null)}
-        variants={item}>
-            <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-            <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-amber-950/5 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-            <div className="z-10 sm:order-2 sm:col-span-6">
-                <h3>
-                <Link href='/projects/SwanCom/'aria-label='My SwanCom project (opens in the same window)' className="inline-flex items-baseline font-medium leading-tight text-black hover:text-red-800 focus-visible:text-red-800  group/link text-base uppercase">
-                    <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                    <span>SwanCom |
-                    <span className="pl-1 inline-block">E-commerce
-                        <span className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden='true'><ArrowUpRight size={16}/></span>
-                    </span>
-                    </span>
-                </Link>
-                </h3>
-            <p className="mt-2 text-sm leading-loose">
-                Enter the SwanCom e-commerce, where you go through the add to cart flow on a pixel perfect and clean setup. 
-            </p>
-            <motion.div className="z-20 relative"
-                style={{ pointerEvents: 'none', willChange: 'transform, opacity, filter'}}
-                animate={hoveredIndex === 1 ? "hover" : "show"}>
-                    <AnimatedTags tags={swanComTags} parentHover={hoveredIndex === 1 ? "hover" : ""}/>
-            </motion.div>
-            </div>
-            <Image 
-            src="/projects/swancom.jpg"
-            alt='Website screenshot'
-            loading="lazy"
-            width={200}
-            height={48}
-            placeholder="blur"
-            blurDataURL="/projects/swancom-blur.jpg"
-            quality={85}
-            className="aspect-video bg-black object-cover rounded shadow-sm transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1">
-            </Image>
-            </div>
-        </motion.li>
-        <motion.li className="mb-12"
-        onHoverStart={() => setHoveredIndex(0)}
-        onHoverEnd={() => setHoveredIndex(null)}
-        variants={item}>
-            <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-            <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-amber-950/5 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-            <div className="z-10 sm:order-2 sm:col-span-6 relative">
-                <h3>
-                <Link href='/projects/HotDogShelter/' aria-label='My Hot Dog shelter project (opens the same window)' className="inline-flex items-baseline font-medium leading-tight text-black hover:text-red-800 focus-visible:text-red-800  group/link text-base uppercase">
-                    <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                    <span>Hot Dog Shelter |
-                    <span className="pl-1 inline-block"> Pet Adoption
-                        <span className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden='true'><ArrowUpRight size={16} /></span>
-                    </span>
-                    </span>
-                </Link>
-                </h3>
-                <p className="mt-2 text-sm leading-loose">
-                    Enter my a pet adoption website, where I use the Noroff Api and CRUD operations in Vanilla JS to fetch, display and transform data. 
-                </p>
-                <motion.div className="z-20 relative"
-                style={{ pointerEvents: 'none', willChange: 'transform, opacity, filter'}}
-                animate={hoveredIndex === 0 ? "hover" : "show"}>
-                    <AnimatedTags tags={hotDogShelterTags} parentHover={hoveredIndex === 0 ? "hover" : ""}/>
-                </motion.div>
-            </div>
-            <Image 
-            src="/projects/hot-dog-shelter.jpg"
-            alt='Website screenshot'
-            loading="lazy"
-            width={200}
-            height={48}
-            placeholder="blur"
-            blurDataURL="/projects/hot-dog-shelter-blur.jpg"
-            quality={85}
-            className="aspect-video bg-black object-cover rounded shadow-sm transition group-hover:border-foreground/20 sm:order-1 sm:col-span-2 sm:translate-y-1">
-            </Image>
-            </div>
-        </motion.li>
-        <motion.li className="mb-12"
-        onHoverStart={() => setHoveredIndex(2)}
-        onHoverEnd={() => setHoveredIndex(null)}
-        variants={item}>
-            <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-            <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-amber-950/5 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-            <div className="z-10 sm:order-2 sm:col-span-6">
-                <h3>
-                <Link href='/projects/RatCentral/' aria-label='My Rat Central project (opens in the same window)' className="inline-flex items-baseline font-medium leading-tight text-black hover:text-red-800 focus-visible:text-red-800  group/link text-base uppercase">
-                    <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                    <span>Rat Central
-                    <span className="pl-1 inline-block">| 
-                        <span className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:tracking-widest group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden='true'><ArrowUpRight size={16}/></span>
-                    </span>
-                    </span>
-                </Link>
-                </h3>
-            <p className="mt-2 text-sm leading-loose">
-                Enter one of my first coding projects, where I dove deep into understanding CSS and HTML accessibility. 
-            </p>
-            <motion.div className="z-20 relative"
-                style={{ pointerEvents: 'none', willChange: 'transform, opacity, filter'}}
-                animate={hoveredIndex === 2 ? "hover" : "show"}>
-                    <AnimatedTags tags={cosmTags} parentHover={hoveredIndex === 2 ? "hover" : ""}/>
-            </motion.div>
-            </div>
-            <Image
-            src="/projects/rat-central.jpg"
-            alt='Website screenshot'
-            loading="lazy"
-            width={200}
-            height={48}
-            placeholder="blur"
-            blurDataURL="/projects/rat-central-blur.jpg"
-            quality={85}
-            className="aspect-video bg-black object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-            srcSet=''>
-            </Image>
-            </div>
-        </motion.li>
+        {projects.map((itemData, index) => (
+            <motion.li 
+            key={index}
+            className="mb-12"
+            onHoverStart={() => setHoveredIndex(1)}
+            onHoverEnd={() => setHoveredIndex(null)}
+            variants={item}>
+                <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-amber-950/5 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                <div className="z-10 sm:order-2 sm:col-span-6">
+                    <h3>
+                    <Link href={itemData.href} aria-label={itemData.ariaLabel} className="inline-flex items-baseline text-xl font-medium leading-tight text-black hover:text-red-800 focus-visible:text-red-800  group/link uppercase">
+                        <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                        <span>
+                        <span className="pl-1 inline-block">{itemData.title} 
+                            <span className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden='true'><ArrowUpRight size={16}/></span>
+                        </span>
+                        </span>
+                    </Link>
+                    </h3>
+                    <p className="mt-2 text-sm w-fit leading-loose">
+                        {itemData.desc} 
+                    </p>
+                    <motion.div className="z-20 relative"
+                        style={{ pointerEvents: 'none', willChange: 'transform, opacity, filter'}}
+                        animate={hoveredIndex === 1 ? "hover" : "show"}>
+                            <AnimatedTags tags={itemData.projectTags} parentHover={hoveredIndex === 1 ? "hover" : ""}/>
+                    </motion.div>
+                    </div>
+                    <div className="relative w-full aspect-video overflow-hidden rounded-lg shadow-sm transition group-hover:border-slate-200/30 col-span-8 sm:translate-y-1">
+                        <Image 
+                        src={itemData.src} 
+                        alt={itemData.alt} 
+                        loading="lazy"
+                        width={700}
+                        height={400}
+                        placeholder="blur"
+                        blurDataURL={itemData.blur} 
+                        quality={85}
+                        className="bg-black object-cover">
+                        </Image>
+                    </div>
+                </div>
+            </motion.li>
+        ))}
     </motion.ul>
   )
 }

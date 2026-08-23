@@ -33,7 +33,7 @@ export default function Home() {
                     JUNIOR FRONTEND DEV
                   </FadeInText>
                   <FadeInText as='p' delay={0.4} className='mt-4 max-w-xs' >
-                    I build creative, practical and structured experiences for the web. My biggest interest is building story-rich and accessible UI's with impeccably clean code.
+                    I build aethetic and structural pages for the web. I love clean and structured code, and although I create designs that fit my personal aesthetic, I am always looking forward to venturing outside of my creative spaces and learning new things.
                   </FadeInText>
                 </div>
                 <div className="flex flex-col justify-between h-full my-14 mb-2">

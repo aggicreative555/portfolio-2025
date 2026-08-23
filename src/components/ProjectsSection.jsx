@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link"
 import { motion } from "framer-motion";
-import { ArrowUpRight, Tags } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import AnimatedTags from "./AnimatedTags";
 import { useState } from "react";
@@ -34,16 +34,27 @@ function ProjectsSection() {
     const holidazeTags = ['React', 'Zustand', 'TailwindCSS', 'Vite', 'API', 'CRUD', 'WCAG', 'Postman', 'Git', 'SPA']
     const swanComTags = [ 'React','Zustand', 'Vite', 'E-commerce', 'API', 'SPA', 'HTML&CSS', 'WCAG','Responsive']
     const emailTags = [ 'MJML','HTML', 'CSS', 'Nodemailer', 'Client', 'WCAG','Responsive']
+    const woodlandTags = [ 'Figma','Prototype', 'Wireframing', 'UX Interviews', 'Case Study', 'Low Fidelity Wirefames']
     const [hoveredIndex, setHoveredIndex] = useState(null);
     
     const projects = [
+        {
+            href: '/Projects/woodland/',
+            ariaLabel: 'My Woodland Trust project (opens in the same window)',
+            title: 'Woodland | Trail and Tree ID App',
+            desc: 'Have You ever wanted to learn more about the tree species on Your trail? The Woodland Trust app is a tree identification app that helps You identify trees and find trails near You. ',
+            src:'/projects/woodland/woodland-thumbnail.png',
+            blur:'/projects/woodland/woodland-thumbnail-blur.png',
+            alt:'Woodland Trust landing page screenshot',
+            projectTags: woodlandTags,
+        },
         {
             href: '/Projects/holidaze/',
             ariaLabel: 'My Holidaze project (opens in the same window)',
             title: 'Holidaze | Holiday Booking',
             desc: 'Need a vacation that feels like a vintage postcard? Enter the Holidaze booking website, where you can sell and order your destination.',
-            src:'/projects/holidaze-thumbnail-dark.jpg',
-            blur:'/projects/holidaze-thumbnail-dark-blur.jpg',
+            src:'/projects/holidaze/holidaze-thumbnail-dark.jpg',
+            blur:'/projects/holidaze/holidaze-thumbnail-darkblur.jpg',
             alt:'Holidaze landing page screenshot',
             projectTags: holidazeTags,
         },
@@ -52,8 +63,8 @@ function ProjectsSection() {
             ariaLabel: 'My SwanCom project (opens in the same window)',
             title: 'SwanCom | E-commerce',
             desc: 'Enter the SwanCom e-commerce, where you go through the add to cart flow on a pixel perfect and clean setup. ',
-            src:'/projects/swancom-thumbnail-1.jpg',
-            blur:'/projects/swancom-thumbnail-blur.jpg',
+            src:'/projects/swancom/swancom-thumbnail-1.jpg',
+            blur:'/projects/swancom/swancom-thumbnail-blur.jpg',
             alt:'SwanCom landing page screenshot',
             projectTags: swanComTags,
         },
@@ -62,19 +73,19 @@ function ProjectsSection() {
             ariaLabel: 'My Vinterst project (opens in the same window)',
             title: 'Vinterest | Vintage blog',
             desc: 'Ever wondered what is behind vintage design, fashion and beauty? Take a look at Vinterest and write your own post on. ',
-            src:'/projects/vinterest-thumbnail-1.jpg',
-            blur:'/projects/vinterest-thumbnail-blur.jpg',
+            src:'/projects/vinterest/vinterest-thumbnail.jpg',
+            blur:'/projects/vinterest/vinterest-thumbnail-blur.jpg',
             alt:'Vinterest landing page screenshot',
             projectTags: vinterestTags,
         },
         {
             href: '/Projects/email/',
             ariaLabel: 'My email template project (opens in the same window)',
-            title: 'Red Velvet | Marketing email',
-            desc: 'A marketing email template for a content creator called Red Velvet',
-            src:'/projects/redvelvet-thumbnail.jpg',
-            blur:'/projects/redvelvet-thumbnail-blur.jpg',
-            alt:'Vinterest landing page screenshot',
+            title: 'Brand Email | MJML Template',
+            desc: 'A marketing email template for a content creator.',
+            src:'/projects/brandmail/brandmail-thumbnail.jpg',
+            blur:'/projects/brandmail/brandmail-thumbnail-blur.jpg',
+            alt:'Brandmail email template',
             projectTags: emailTags,
         },
     ]
@@ -115,17 +126,17 @@ function ProjectsSection() {
                             <AnimatedTags tags={itemData.projectTags} parentHover={hoveredIndex === 1 ? "hover" : ""}/>
                     </motion.div>
                     </div>
-                    <div className="relative w-full aspect-video overflow-hidden rounded-lg shadow-sm transition group-hover:border-slate-200/30 col-span-8 sm:translate-y-1">
+                    <div className="relative w-full aspect-video overflow-hidden rounded-lg shadow-sm transition group-hover:border-slate-200/30 col-span-8 md:col-span-6 sm:translate-y-1">
                         <Image 
                         src={itemData.src} 
                         alt={itemData.alt} 
                         loading="lazy"
-                        width={700}
+                        width={600}
                         height={400}
                         placeholder="blur"
                         blurDataURL={itemData.blur} 
-                        quality={85}
-                        className="bg-black object-cover">
+                        quality={100}
+                        className="h-full w-full bg-black object-cover">
                         </Image>
                     </div>
                 </div>

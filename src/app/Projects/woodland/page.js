@@ -20,12 +20,12 @@ export const metadata = {
 };  
 
 const linkData = [
-  { title: 'GitHub', href: 'https://www.figma.com/design/6fySpK1gDW12Hzi05SEdpX/EP-Android-App---Design-System?node-id=0-1&t=7gSjxzzkD79NFGJR-1'},
+  { title: 'Figma', href: 'https://www.figma.com/design/6fySpK1gDW12Hzi05SEdpX/EP-Android-App---Design-System?node-id=0-1&t=7gSjxzzkD79NFGJR-1'},
 ]
 
-const tags = ['React', 'Zustand', 'TailwindCSS', 'Vite', 'API', 'CRUD', 'WCAG', 'Postman', 'Git', 'SPA']
+const tags = ['Figma','Prototype', 'Wireframing', 'UX Interviews', 'Case Study', 'Low Fidelity Wirefames']
 
-export default function Holidaze() {
+export default function WoodlandTrust() {
   return (
     <div className="mx-4 md:mx-0">
       <div className="container mx-auto">
@@ -36,16 +36,16 @@ export default function Holidaze() {
               <div className="relative cursor-pointer font-garamond">
                 <FadeInText as='h3' delay={0.2} >
                     <Link 
-                      href="https://vacation-booking-holidaze.netlify.app/" 
+                      href="https://www.figma.com/design/6fySpK1gDW12Hzi05SEdpX/EP-Android-App---Design-System?node-id=0-1&t=7gSjxzzkD79NFGJR-1" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      title="Netlify Link"
-                      aria-label="Netlify Link (opens in a new tab)"
+                      title="Figma Prototype"
+                      aria-label="Figma Prototype (opens in a new tab)"
                       className="text-crimson uppercase inline-flex flex-wrap items-baseline font-semibold tracking-wider leading-tight hover:text-red-800 hover:-translate-y-1 duration-300 focus-visible:text-red-800 group/link text-xl sm:text-2xl lg:text-3xl md:mb-4 "
                     >
-                      Holidaze |
+                      Woodland Trust |
                       <span className="pl-1 inline-block">
-                        Vacation Booking Site
+                        Tree Identification App
                         <span className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-2 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 -translate-y-1 ">
                           <ArrowUpRight/>
                         </span>
@@ -55,7 +55,7 @@ export default function Holidaze() {
                 <FadeInText as='p' delay={.4}>
                 </FadeInText>
                 <FadeInText as='p' delay={0.4} className='mt-4 text-sm leading-loose tracking-wider cursor-default '>
-                  Enter Holidaze, a vacation booking site where you can <span aria-hidden='true' className="font-semibold  duration-300">find and book accommodations</span>. This is a highly interactive prototype built using <span aria-hidden='true' className="font-semibold   duration-300">React and Zustand</span>. It includes a <span aria-hidden='true' className="font-semibold duration-300"> Venue Manager state </span> which let's You  <span aria-hidden='true' className="font-semibold   duration-300">create, edit and delete</span> venues, while the  <span aria-hidden='true' className="font-semibold   duration-300"> Customer state</span> let's You <span aria-hidden='true' className="font-semibold duration-300"> book vacations using a calendar, view them on Your profile, and delete booked venues.</span>
+                  Enter Woodland trust, a trail finding app where you can <span aria-hidden='true' className="font-semibold  duration-300">identify trees, find your trail, and learn about different trails nearby</span>. This is a highly interactive prototype built using <span aria-hidden='true' className="font-semibold   duration-300">Figma</span>. As it was a part of my UI/UX studies for Noroff, it includes a<span aria-hidden='true' className="font-semibold   duration-300"> UX case study</span> and <span aria-hidden='true' className="font-semibold   duration-300">wireframes</span>.
                 </FadeInText>
                 <AnimatedLinks links={linkData}/>
               </div>
@@ -67,57 +67,43 @@ export default function Holidaze() {
                 className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 md:space-y-6 "
                 aria-label="Project Images"
                 id="images"
-                
               >
-                <div className="overflow-hidden h-[500px]">
-                 <AnimatedImage
-                    src="/projects/holidaze/holidaze-full-2.png"
-                    alt="Website screenshot"
-                    width={1521}
-                    height={4038}
-                    className="border-round-md w-full overflow-hidden"
-                  />
-
-                </div>
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 h-[600px]">
+                <VideoWithLoader src="/projects/woodland/video-1.mp4" poster="/projects/woodland/mobile-1.png" alt="Woodland project video" className="w-fit h-[600px] mx-auto border-4 border-black" />
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
                   <AnimatedImage
-                    src="/projects/holidaze/holidaze-mobile-5.png"
+                    src="/projects/woodland/mobile-2.png"
                     alt="Website screenshot"
                     width={222}
                     height={432}
-                    className="border-round-md h-fit w-fit scale-102 object-cover object-top"
+                    className="border-round-md h-fit w-fit scale-102 object-cover"
                   />
                   <AnimatedImage
-                    src="/projects/holidaze/holidaze-mobile-full-1.png"
+                    src="/projects/woodland/mobile-3.png"
                     alt="Website screenshot"
                     width={222}
                     height={432}
-                    className="border-round-md h-fit w-fit scale-102 object-cover object-top"
+                    className="border-round-md h-fit w-fit scale-102 object-cover"
                   />
                   <AnimatedImage
-                    src="/projects/holidaze/holidaze-mobile-full-2.png"
+                    src="/projects/woodland/mobile-4.png"
                     alt="Website screenshot"
                     width={222}
                     height={432}
-                    className="border-round-md h-fit w-fit scale-102 object-cover object-top"
+                    className="border-round-md h-fit w-fit scale-102 object-cover"
                   />
-                </div>
-                 <div className="overflow-hidden h-[1000px]">
-                 <AnimatedImage
-                    src="/projects/holidaze/holidaze-full-5.png"
+                  <AnimatedImage
+                    src="/projects/woodland/mobile-6.png"
                     alt="Website screenshot"
-                    width={1521}
-                    height={4038}
-                    className="border-round-md w-full overflow-hidden object-top"
+                    width={222}
+                    height={432}
+                    className="border-round-md h-fit w-fit scale-102 object-cover"
                   />
-                </div>
-                 <div className="overflow-hidden h-[1000px]">
-                 <AnimatedImage
-                    src="/projects/holidaze/holidaze-full-6.png"
+                  <AnimatedImage
+                    src="/projects/woodland/mobile-7.png"
                     alt="Website screenshot"
-                    width={1521}
-                    height={4038}
-                    className="border-round-md w-full overflow-hidden object-top"
+                    width={222}
+                    height={432}
+                    className="border-round-md h-fit w-fit scale-102 object-cover"
                   />
                 </div>
               </section>

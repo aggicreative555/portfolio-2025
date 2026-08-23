@@ -26,3 +26,34 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.media-loader {
+  position: absolute;
+  inset: -20%;
+  transform: rotate(45deg) scale(1.5);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.98) 0%,
+    rgba(0, 0, 0, 0.9) 18%,
+    rgba(0, 0, 0, 0.15) 48%,
+    rgba(0, 0, 0, 0.9) 82%,
+    rgba(0, 0, 0, 0.98) 100%
+  );
+  background-size: 200% 200%;
+  animation: media-sweep 1200ms ease-in-out infinite;
+  opacity: 0.9;
+}
+
+@keyframes media-sweep {
+  0% {
+    background-position: 200% 0%;
+    opacity: 0.18;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    background-position: -200% 0%;
+    opacity: 0.18;
+  }
+}

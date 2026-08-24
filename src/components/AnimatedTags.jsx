@@ -6,7 +6,7 @@ import { motion} from "framer-motion";
  * @param {Array} tags - array of strings (e.g., ["JavaScript", "Figma", "Tailwind CSS"])
 */
 
-export default function AnimatedTags({ tags = [], parentHover = '' }) {
+export default function AnimatedTags({ tags = [], parentHover = '', className = "" }) {
 
     const listVariants = {
         hidden: { opacity: 0 },
@@ -63,7 +63,7 @@ export default function AnimatedTags({ tags = [], parentHover = '' }) {
         whileHover='hover'
         whileFocus='hover'
         role='list'
-        className="mt-6 flex flex-wrap gap-2 font-garamond tracking-wider cursor-default"
+        className={`flex flex-wrap gap-2 font-garamond tracking-wider cursor-default ${className}`}
         >
         {tags.map((tag, index) => (
             <motion.li

@@ -54,7 +54,7 @@ function ExperienceSection() {
             <div className="z-10 sm:col-span-6">
             <h3 className="font-medium leading-snug text-black">
                 <div>
-                <Link href='/' target="_blank" aria-label='UI Designer, Sto Medial (opens in another tab)' className="inline-flex items-baseline font-medium leading-tight tracking-wider text-black hover:text-red-800 focus-visible:text-red-800 text-base uppercase">
+                <Link href='https://www.figma.com/proto/XXT4zILy4AIMlM6FR4mzcW/aggi-portfolio-2025?node-id=317-841&t=XynHMdxYhOlOjkQt-1&scaling=contain&content-scaling=fixed&page-id=317%3A184&starting-point-node-id=317%3A841' target="_blank" aria-label='UI Designer, Sto Medial (opens in another tab)' className="inline-flex items-baseline font-medium leading-tight tracking-wider text-black hover:text-red-800 focus-visible:text-red-800 text-base uppercase">
                 <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block">
                 </span>
                 <span>
@@ -66,8 +66,8 @@ function ExperienceSection() {
                 </Link>
                 </div>
             </h3>
-            <p className="mt-2 text-sm leading-loose">
-                As a visual merchandiser, I work with product, mannequin & window displays in-store. I plan campaigns and build the layout and displays accordingly. I'm also in charge of pricing our clothing items and delivering a delightful customer service. 
+            <p className="mt-2 text-sm leading-loose mb-4">
+                As a visual merchandiser, I work with the UX of the store, including; layout, product, mannequin & window displays. I plan campaigns and build the layout and displays accordingly. I'm also in charge of pricing our clothing items and delivering a delightful customer service. 
             </p>
             <motion.div className="z-20 relative"
                 style={{ pointerEvents: 'none', willChange: 'transform, opacity, filter'}}
@@ -90,7 +90,7 @@ function ExperienceSection() {
             <div className="z-10 sm:col-span-6">
             <h3 className="font-medium leading-snug text-black">
                 <div>
-                <Link href='/' target="_blank" aria-label='UI Designer, Sto Medial (opens in another tab)' className="inline-flex items-baseline font-medium leading-tight text-black hover:text-red-800 focus-visible:text-red-800 text-base uppercase tracking-wider">
+                <Link href='https://www.studvest.no/' target="_blank" aria-label='UI Designer, Sto Medial (opens in another tab)' className="inline-flex items-baseline font-medium leading-tight text-black hover:text-red-800 focus-visible:text-red-800 text-base uppercase tracking-wider">
                 <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block">
                 </span>
                 <span>
@@ -103,7 +103,7 @@ function ExperienceSection() {
                 </Link>
                 </div>
             </h3>
-            <p className="mt-2 text-sm leading-loose">
+            <p className="mt-2 text-sm leading-loose mb-4">
                 As a development intern, I was working in a team of IT students being in charge of debugging the website and taking on projects to improve the website, or to create article adjacent interactive media such as games. Unfortunately, the developement team and it's assets are as of now, deprecated. 
             </p>
             <motion.div className="z-20 relative"
@@ -127,7 +127,7 @@ function ExperienceSection() {
             <div className="z-10 sm:col-span-6">
             <h3 className="font-medium leading-snug text-black">
                 <div>
-                <Link href='/' target="_blank" aria-label='UI Designer, Sto Medial (opens in another tab)' className="inline-flex items-baseline font-medium leading-tight text-black hover:text-red-800 focus-visible:text-red-800 text-base uppercase tracking-wider">
+                <Link href='https://www.figma.com/design/VNL0tDLNZhq2aWhID4Cce0/STO-MEDICAL-Project?t=QzJ9KGmpTH7NxQbO-1' target="_blank" aria-label='UI Designer, Sto Medial (opens in another tab)' className="inline-flex items-baseline font-medium leading-tight text-black hover:text-red-800 focus-visible:text-red-800 text-base uppercase tracking-wider">
                 <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block">
                 </span>
                 <span>
@@ -138,8 +138,8 @@ function ExperienceSection() {
                 </Link>
                 </div>
             </h3>
-            <p className="mt-2 text-sm leading-loose">
-                As a UI Designer at a startup, I had meetings with my team and was tasked with creating a UI Design for the website with the goal of making sale conversions and introducing a 'subscription' feature. I made the UI for the landing page, which is still used today.  
+            <p className="mt-2 text-sm leading-loose mb-4">
+                As a UI Designer at a startup, I had meetings with my team and was tasked with creating a UI Design for the website with the goal of making sale conversions and introducing a 'subscription' feature. I made the UI for the landing page, which was used on the website for 2 years. The websute was built using WordPress.   
             </p>
             <motion.div className="z-20 relative"
                 style={{ pointerEvents: 'none', willChange: 'transform, opacity, filter'}}

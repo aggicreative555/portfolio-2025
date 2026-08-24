@@ -3,7 +3,6 @@ import AnimatedLinks from "@/components/AnimatedLinks";
 import AnimatedTags from "@/components/AnimatedTags";
 import BackButton from "@/components/buttons/BackButton";
 import FadeInText from "@/components/FadeInText";
-import VideoWithLoader from "@/components/video/VideoWithLoader";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
@@ -20,7 +19,8 @@ export const metadata = {
 };  
 
 const linkData = [
-  { title: 'GitHub', href: 'https://www.figma.com/design/6fySpK1gDW12Hzi05SEdpX/EP-Android-App---Design-System?node-id=0-1&t=7gSjxzzkD79NFGJR-1'},
+  { title: 'GitHub', href: 'https://github.com/aggicreative555/vacation-booking-holidaze'},
+  { title: 'Figma UX/UI', href: 'https://www.figma.com/design/Y1WDXW4CrpQSR02t6wjNDv/Holidaze?node-id=0-1&t=QzJ9KGmpTH7NxQbO-1'},
 ]
 
 const tags = ['React', 'Zustand', 'TailwindCSS', 'Vite', 'API', 'CRUD', 'WCAG', 'Postman', 'Git', 'SPA']
@@ -54,9 +54,19 @@ export default function Holidaze() {
                 </FadeInText>
                 <FadeInText as='p' delay={.4}>
                 </FadeInText>
-                <FadeInText as='p' delay={0.4} className='mt-4 text-sm leading-loose tracking-wider cursor-default '>
-                  Enter Holidaze, a vacation booking site where you can <span aria-hidden='true' className="font-semibold  duration-300">find and book accommodations</span>. This is a highly interactive prototype built using <span aria-hidden='true' className="font-semibold   duration-300">React and Zustand</span>. It includes a <span aria-hidden='true' className="font-semibold duration-300"> Venue Manager state </span> which let's You  <span aria-hidden='true' className="font-semibold   duration-300">create, edit and delete</span> venues, while the  <span aria-hidden='true' className="font-semibold   duration-300"> Customer state</span> let's You <span aria-hidden='true' className="font-semibold duration-300"> book vacations using a calendar, view them on Your profile, and delete booked venues.</span>
+                 <FadeInText as='p' delay={0.4}>
+                  <span className="flex flex-col">
+                    <span className="cursor-default">
+                      Enter Holidaze, a website that looks like a <span aria-hidden='true' className="font-semibold  focus:tracking-widest duration-300">a vintage vacation </span> postcard. 
+                      <span> On this website you can </span> 
+                      <span aria-hidden='true' className="font-semibold  focus:tracking-widest duration-300"> login as a venue manager or a customer, view API venues, create a venue, edit a venue, make a booking and view bookings. </span> Other funcitonalities include: search with debounce and real time results, filtering by 10+ parameters, real-time form validation and error messages. It's fully responsive and features modals for booking confirmation and checking bookings. 
+                    </span>
+                    <span className="mt-2">
+                      I used React to maintain an SPA, and have a clean and modular component setup and Zustand to manage the booking storage and states. 
+                    </span>
+                  </span>
                 </FadeInText>
+              
                 <AnimatedLinks links={linkData}/>
               </div>
               {/* Technologies */}
@@ -79,30 +89,30 @@ export default function Holidaze() {
                   />
 
                 </div>
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 h-[600px]">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 h-[600px] mt-10">
                   <AnimatedImage
                     src="/projects/holidaze/holidaze-mobile-5.png"
                     alt="Website screenshot"
                     width={222}
                     height={432}
-                    className="border-round-md h-fit w-fit scale-102 object-cover object-top"
+                    className="border-round-md h-fit w-fit scale-102 object-cover object-[center_20%]"
                   />
                   <AnimatedImage
                     src="/projects/holidaze/holidaze-mobile-full-1.png"
                     alt="Website screenshot"
                     width={222}
                     height={432}
-                    className="border-round-md h-fit w-fit scale-102 object-cover object-top"
+                    className="border-round-md h-fit w-fit scale-102 object-cover object-[center_3%]"
                   />
                   <AnimatedImage
                     src="/projects/holidaze/holidaze-mobile-full-2.png"
                     alt="Website screenshot"
                     width={222}
                     height={432}
-                    className="border-round-md h-fit w-fit scale-102 object-cover object-top"
+                    className="border-round-md h-fit w-fit scale-102 object-cover object-[center_3.5%]"
                   />
                 </div>
-                 <div className="overflow-hidden h-[1000px]">
+                 <div className="overflow-hidden h-fit mt-10">
                  <AnimatedImage
                     src="/projects/holidaze/holidaze-full-5.png"
                     alt="Website screenshot"
@@ -111,7 +121,7 @@ export default function Holidaze() {
                     className="border-round-md w-full overflow-hidden object-top"
                   />
                 </div>
-                 <div className="overflow-hidden h-[1000px]">
+                 <div className="overflow-hidden h-fit">
                  <AnimatedImage
                     src="/projects/holidaze/holidaze-full-6.png"
                     alt="Website screenshot"

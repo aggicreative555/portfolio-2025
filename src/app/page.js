@@ -33,7 +33,7 @@ export default function Home() {
                     JUNIOR FRONTEND DEV
                   </FadeInText>
                   <FadeInText as='p' delay={0.4} className='mt-4 max-w-xs' >
-                    I build aethetic and structural pages for the web. I love clean and structured code, and although I create designs that fit my personal aesthetic, I am always looking forward to venturing outside of my creative spaces and learning new things.
+                    I build aesthetic and structural pages for the web. I love clean and structured code, and although I create designs that fit my personal aesthetic, I am always looking forward to venturing outside of my creative spaces and learning new things.
                   </FadeInText>
                 </div>
                 <div className="flex flex-col justify-between h-full my-14 mb-2">
@@ -57,7 +57,7 @@ export default function Home() {
                       I am currently a <span  aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300"> Visual Merchandiser</span> at UFF, where I craft user experiences on-site. I contribute to the visual touchpoints of our store and drive sales by using UX principles and Design Thinking to create delightful experiences. 
                     </FadeInText>
                     <FadeInText as='p' delay={0.8}>
-                      During my UX and Front-end studies, I had a professional UI project for <span  aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300">STO Medical</span>, building wireframes that are still used today for their website. Later, I was a development intern in <span  aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300">StudVest</span> where we debugged the website and created fun games for students to experience. In my free time I’m a content creator and artist. 
+                      During my UX and Front-end studies, I had a professional UI project for <span  aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300">STO Medical</span>, building wireframes and digital assets. Later, I was a development intern in <span  aria-hidden='true' className="font-semibold hover:tracking-widest focus:tracking-widest duration-300">StudVest</span> where we debugged the website and created fun games for students to experience. In my free time I love to design & crochet, or indulge in any kind of artistic endeavor. 
                     </FadeInText>
                     <FadeInText as='p' delay={1} className='mb-4'>
                       As a newly graduated Front-end development student, I’m looking for new opportunities within my educational field, where I can widen my design, UX and development horizons. 

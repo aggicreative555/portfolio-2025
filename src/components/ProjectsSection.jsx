@@ -59,7 +59,7 @@ function ProjectsSection() {
             projectTags: holidazeTags,
         },
         {
-            href: '/Projects/swancom/',
+            href: '/Projects/swan/',
             ariaLabel: 'My SwanCom project (opens in the same window)',
             title: 'SwanCom | E-commerce',
             desc: 'Enter the SwanCom e-commerce, where you go through the add to cart flow on a pixel perfect and clean setup. ',

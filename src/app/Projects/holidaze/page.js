@@ -59,7 +59,7 @@ export default function Holidaze() {
                     <span className="cursor-default">
                       Enter Holidaze, a website that looks like a <span aria-hidden='true' className="font-semibold  focus:tracking-widest duration-300">a vintage vacation </span> postcard. 
                       <span> On this website you can </span> 
-                      <span aria-hidden='true' className="font-semibold  focus:tracking-widest duration-300"> login as a venue manager or a customer, view API venues, create a venue, edit a venue, make a booking and view bookings. </span> Other funcitonalities include: search with debounce and real time results, filtering by 10+ parameters, real-time form validation and error messages. It's fully responsive and features modals for booking confirmation and checking bookings. 
+                      <span aria-hidden='true' className="font-semibold  focus:tracking-widest duration-300"> login as a venue manager or a customer, view API venues, create a venue, edit a venue, make a booking and view bookings. </span> Other funcitonalities include: search with debounce and real time results, filtering by 10+ parameters, real-time form validation and error messages. It&apos;s fully responsive and features modals for booking confirmation and checking bookings. 
                     </span>
                     <span className="mt-2">
                       I used React to maintain an SPA, and have a clean and modular component setup and Zustand to manage the booking storage and states. 

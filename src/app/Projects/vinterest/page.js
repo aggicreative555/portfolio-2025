@@ -55,7 +55,7 @@ export default function Vinterest() {
                 <FadeInText as='p' delay={.4}>
                 </FadeInText>
                   <FadeInText as='p' delay={0.4} className='mt-4 text-sm leading-loose tracking-wider '>
-                    Imagine a blog only dedicated to vintage fun-facts and trinkets, that's Vinterest. This is a pure  <span aria-hidden='true' className="font-semibold 
+                    Imagine a blog only dedicated to vintage fun-facts and trinkets, that&apos;s Vinterest. This is a pure  <span aria-hidden='true' className="font-semibold 
                      duration-300">JavaScript</span> project, featuring a <span aria-hidden='true' className="font-semibold 
                      duration-300">picture carousel, API authentication, create post, edit post and delete post </span> functionalities. Since I used JS and CSS only, this is an <span aria-hidden='true' className="font-semibold 
                      duration-300"> MPA site </span> using the <span aria-hidden='true' className="font-semibold 

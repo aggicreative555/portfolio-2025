@@ -4,19 +4,7 @@ import AnimatedTags from "@/components/AnimatedTags";
 import BackButton from "@/components/buttons/BackButton";
 import FadeInText from "@/components/FadeInText";
 import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
-
-export const metadata = {
-  metadataBase: new URL("https://aggi-cieplak.com"),
-  title: "Aggi Cieplak | Woodland Trust",
-  description: "Enter Woodland Trust, an app that lets you find your trail, and identify trees on the way.",
-  openGraph: {
-    title: "Aggi Cieplak | Front-end Portfolio",
-    description: "Enter Woodland Trust, an app that lets you find your trail, and identify trees on the way.",
-    url: "https://aggi-cieplak.com",
-    images: ["/assets/portfolio-mini.jpg"],
-  },
-};  
+import Link from "next/link"; 
 
 const linkData = [
   { title: 'GitHub', href: 'https://github.com/NoroffFEU/FED1-PE1-aggicreative555'},

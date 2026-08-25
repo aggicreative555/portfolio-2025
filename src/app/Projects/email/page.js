@@ -1,12 +1,11 @@
 import AnimatedImage from "@/components/AnimatedImage";
-import AnimatedLinks from "@/components/AnimatedLinks";
 import AnimatedTags from "@/components/AnimatedTags";
 import BackButton from "@/components/buttons/BackButton";
 import FadeInText from "@/components/FadeInText";
 
 const tags = [ 'MJML','HTML', 'CSS', 'Nodemailer', 'Client', 'WCAG','Responsive']
 
-export default function Vinterest() {
+export default function Brandmail() {
   return (
     <div className="mx-4 md:mx-0">
       <div className="container mx-auto">

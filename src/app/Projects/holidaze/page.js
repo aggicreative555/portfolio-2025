@@ -5,18 +5,7 @@ import BackButton from "@/components/buttons/BackButton";
 import FadeInText from "@/components/FadeInText";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-
-export const metadata = {
-  metadataBase: new URL("https://aggi-cieplak.com"),
-  title: "Aggi Cieplak | Woodland Trust",
-  description: "Enter Woodland Trust, an app that lets you find your trail, and identify trees on the way.",
-  openGraph: {
-    title: "Aggi Cieplak | Front-end Portfolio",
-    description: "Enter Woodland Trust, an app that lets you find your trail, and identify trees on the way.",
-    url: "https://aggi-cieplak.com",
-    images: ["/assets/portfolio-mini.jpg"],
-  },
-};  
+ 
 
 const linkData = [
   { title: 'GitHub', href: 'https://github.com/aggicreative555/vacation-booking-holidaze'},
@@ -57,12 +46,12 @@ export default function Holidaze() {
                  <FadeInText as='p' delay={0.4}>
                   <span className="flex flex-col">
                     <span className="cursor-default">
-                      Enter Holidaze, a website that looks like a <span aria-hidden='true' className="font-semibold  focus:tracking-widest duration-300">a vintage vacation </span> postcard. 
-                      <span> On this website you can </span> 
-                      <span aria-hidden='true' className="font-semibold  focus:tracking-widest duration-300"> login as a venue manager or a customer, view API venues, create a venue, edit a venue, make a booking and view bookings. </span> Other funcitonalities include: search with debounce and real time results, filtering by 10+ parameters, real-time form validation and error messages. It&apos;s fully responsive and features modals for booking confirmation and checking bookings. 
+                      Enter Holidaze, a website that looks like a <span aria-hidden='true' className="font-semibold duration-300">a vintage vacation </span> postcard. 
+                      <span> This website has two states; 1. </span> 
+                      <span aria-hidden='true' className="font-semibold duration-300"> Venue Manager </span> which makes it possible to <span aria-hidden='true' className="font-semibold duration-300"> create, edit and delete </span> venues. 2.<span aria-hidden='true' className="font-semibold duration-300"> Customer </span> where you can <span aria-hidden='true' className="font-semibold duration-300"> book venues using a calendar, confirm and delete. </span> Other funcitonalities include: <span aria-hidden='true' className="font-semibold duration-300"> search with debounce and real time results, filtering by 10+ parameters, real-time form validation and error messages.</span> It&apos;s fully responsive.
                     </span>
                     <span className="mt-2">
-                      I used React to maintain an SPA, and have a clean and modular component setup and Zustand to manage the booking storage and states. 
+                      I used React for SPA and modularity and Zustand for booking storage.
                     </span>
                   </span>
                 </FadeInText>

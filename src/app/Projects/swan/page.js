@@ -6,18 +6,6 @@ import FadeInText from "@/components/FadeInText";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  metadataBase: new URL("https://aggi-cieplak.com"),
-  title: "Aggi Cieplak | SwanCom",
-  description: "Enter SwanCom, a clean and elegant e-commerce website built with React and Zustand.",
-  openGraph: {
-    title: "Aggi Cieplak | SwanCom",
-    description: "Enter SwanCom, a clean and elegant e-commerce website built with React and Zustand.",
-    url: "https://aggi-cieplak.com",
-    images: ["/assets/portfolio-mini.jpg"],
-  },
-};
-
 const linkData = [
   { title: "GitHub", href: "https://github.com/NoroffFEU/jsfw-2025-v1-js-frameworks-25" },
 ];

@@ -7,17 +7,6 @@ import VideoWithLoader from "@/components/video/VideoWithLoader";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  metadataBase: new URL("https://aggi-cieplak.com"),
-  title: "Aggi Cieplak | Woodland Trust",
-  description: "Enter Woodland Trust, an app that lets you find your trail, and identify trees on the way.",
-  openGraph: {
-    title: "Aggi Cieplak | Front-end Portfolio",
-    description: "Enter Woodland Trust, an app that lets you find your trail, and identify trees on the way.",
-    url: "https://aggi-cieplak.com",
-    images: ["/assets/portfolio-mini.jpg"],
-  },
-};  
 
 const linkData = [
   { title: 'Figma', href: 'https://www.figma.com/design/6fySpK1gDW12Hzi05SEdpX/EP-Android-App---Design-System?node-id=0-1&t=7gSjxzzkD79NFGJR-1'},
